@@ -88,6 +88,7 @@ use * statement for making optional parameter
 ```javascript
 var opt = fonksiyon({
 	"string, *number": function(str, num) {
+		num || (num = 5);
 		console.log(str, num);
 	}
 });
